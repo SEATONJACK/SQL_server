@@ -50,6 +50,7 @@
 |MA240|real|
 |K_value|float|
 |D_value|float|
+|Trend|nvarchar(50)|
 
 ### Top_10_of_Taiwan_50
 
@@ -109,3 +110,4 @@
 * [sp_StockMACrossover.sql](sql/sp_StockMACrossover.sql)：根據給定的起始日期、結束日期、股票代號，和2條 moving average 線，並回傳兩條線交叉的狀況 (死亡/黃金交叉)
 * [sp_StockMAPercentageFilter.sql](sql/sp_StockMAPercentageFilter.sql)：為`sp_StockMACrossover.sql` 的強化版，除了兩條線交叉的狀況 (死亡/黃金交叉)，還可以指定交叉需要相差多少比例才算數。
 * [Trend_Analysis.sql](sql/Trend_Analysis.sql)：根據給定的起始日期、結束日期、股票代號，依據MA 的狀況判斷股票趨勢
+* [sp_CalculateTrend_Granville](sql/sp_CalculateTrend_Granville.sql)：依據葛蘭必法則判斷當前的上漲下跌趨勢
